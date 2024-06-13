@@ -1,0 +1,22 @@
+a=float(input())
+if(a<200):
+    x=a*1.20
+    if(x<100):
+        print("100.00")
+    else:
+        print("{:.2f}".format(x))
+elif(200<=a<400):
+    y=a*1.50
+    if(y>=400):
+        p=y*15/100+y
+        print("{:.2f}".format(p))
+    else:
+        print("{:.2f}".format(y))
+elif(400<=a<600):
+    z=a*1.80
+    q=z*15/100+z
+    print("{:.2f}".format(q))
+else:
+    w=a*2.00
+    r=w*15/100+w
+    print("{:.2f}".format(r))

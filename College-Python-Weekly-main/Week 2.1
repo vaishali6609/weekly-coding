@@ -1,0 +1,9 @@
+def count_ones(num):
+    count=0
+    while num:
+        count += num & 1
+        num>>=1
+    return count
+        
+num=int(input())
+print(count_ones(num))

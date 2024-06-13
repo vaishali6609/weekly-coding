@@ -1,0 +1,4 @@
+x=int(input())
+x=abs(x)
+y=x%10
+print(y)

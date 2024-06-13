@@ -1,0 +1,17 @@
+def is_power_of_four(n):
+    # Check if n is positive
+    if n <= 0:
+        return False
+    
+    # Check if n is a power of two
+    if n & (n - 1) != 0:
+        return False
+    
+    # Check if the position of the set bit is at an even position
+    return bin(n).count('0') % 2 == 1
+
+# Input
+n = int(input())
+
+# Check if n is a power of four and print the result
+print(is_power_of_four(n))

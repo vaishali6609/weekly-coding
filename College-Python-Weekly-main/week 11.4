@@ -1,0 +1,21 @@
+def perform_operations(num1, num2):
+    try:
+        division_result = num1 / num2
+        modulo_result = num1 % num2
+        print("Division result:", division_result)
+        print("Modulo result:", modulo_result)
+    except ZeroDivisionError:
+        print("Error: Cannot divide or modulo by zero.")
+    except Exception as e:
+        print("Error:", e)
+
+def main():
+    try:
+        num1 = int(input())
+        num2 = int(input())
+        perform_operations(num1, num2)
+    except ValueError:
+        print("Error: Non-numeric input provided.")
+
+if __name__ == "__main__":
+    main()
